@@ -1,3 +1,6 @@
+#Code based on LogLLM preprocess scripts: https://github.com/guanwei49/LogLLM/tree/master
+#Download Dataset can here: https://github.com/logpai/loghub
+
 import os
 import re
 from collections import defaultdict

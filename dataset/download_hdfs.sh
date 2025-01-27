@@ -1,3 +1,5 @@
+#Download Dataset can here: https://github.com/logpai/loghub
+
 file="${HOME}/.dataset/hdfs/"
 if [ -e $file ]
 then
