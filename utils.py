@@ -137,7 +137,7 @@ def train_client(client, client_dataset, round, sim_name, tokenizer,
     training_args = TrainingArguments(
         output_dir="./fl-results",
         logging_dir="./logs",
-        logging_steps=max_steps-1,
+        logging_steps=max_steps+11,
         learning_rate=lr,
         weight_decay=0.01,
         max_steps=max_steps,
