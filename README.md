@@ -61,7 +61,7 @@ python federated_training.py --sim_name "experimento1" \
     --dataset_path "../.dataset/hdfs/tokenized" \
     --lora \
     --lora_rank 8 \
-    --nrows 1000 \
+    --nrows None \
     --cuda_device "0" \
     --max_steps 10 \
     --batch_size 32
@@ -76,7 +76,7 @@ python federated_training.py --sim_name "experimento1" \
 - `--dataset_path`: Caminho para o dataset tokenizado.
 - `--lora`: Habilita LoRA (True ou False).
 - `--lora_rank`: Rank para LoRA.
-- `--nrows`: Número de linhas do dataset a carregar (caso vá limitar, se não, manter None).
+- `--nrows`: Número de amostras do dataset total (caso vá limitar, se não, manter None para utilizar todas).
 - `--cuda_device`: Dispositivo CUDA a ser usado.
 - `--max_steps`: Número máximo de passos de treinamento por cliente.
 - `--batch_size`: Tamanho do batch para treinamento.
@@ -89,7 +89,7 @@ Para avaliar a predição do próximo token no modelo treinado, execute:
 python federated_evaluation.py --sim_name "experimento1" \
     --model_name "HuggingFaceTB/SmolLM-135M" \
     --dataset_path "../.dataset/hdfs/test.csv" \
-    --nrows 1000 \
+    --nrows None \
     --n_rounds 50 \
     --lora \
     --cuda_device "0"
@@ -99,7 +99,7 @@ python federated_evaluation.py --sim_name "experimento1" \
 - `--sim_name`: Nome da simulação.
 - `--model_name`: Nome ou caminho do modelo pré-treinado no HuggingFace (e.g. "HuggingFaceTB/SmolLM-135M", "HuggingFaceTB/SmolLM-360M" e "HuggingFaceTB/SmolLM-1.7B")
 - `--dataset_path`: Caminho para o dataset de teste.
-- `--nrows`: Número de linhas do dataset a carregar (para depuração).
+- `--nrows`: Número de amostras do dataset total (caso vá limitar, se não, manter None para utilizar todas).
 - `--n_rounds`: Número de rodadas para avaliar.
 - `--lora`: Habilita LoRA (True ou False).
 - `--cuda_device`: Dispositivo CUDA a ser usado.
