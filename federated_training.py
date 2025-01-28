@@ -15,7 +15,7 @@ parser.add_argument('--num_rounds', type=int, default=50, help='Number of traini
 parser.add_argument('--num_clients', type=int, default=50, help='Total number of clients')
 parser.add_argument('--client_frac', type=float, default=0.1, help='Fraction of clients selected per round')
 parser.add_argument('--model_name', type=str, default="HuggingFaceTB/SmolLM-135M", help='Pre-trained model name or path')
-parser.add_argument('--dataset_path', type=str,  default='../.dataset/hdfs/tokenized1024', help='Path to the dataset')
+parser.add_argument('--dataset_path', type=str,  default='../.dataset/hdfs/tokenized', help='Path to the dataset')
 parser.add_argument('--lora', action='store_true', help='Enable LoRA (Low-Rank Adaptation)')
 parser.add_argument('--lora_rank', type=int, default=8, help='Rank for LoRA')
 parser.add_argument('--nrows', type=int, default=None, help='Number of rows to load from the dataset (for debugging)')
