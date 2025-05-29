@@ -103,3 +103,21 @@ python federated_evaluation.py --sim_name "experimento1" \
 - `--n_rounds`: Número de rodadas para avaliar.
 - `--lora`: Habilita LoRA (True ou False).
 - `--cuda_device`: Dispositivo CUDA a ser usado.
+
+## Como citar
+```bibtex
+@inproceedings{talasso_sbrc2025,
+ author = {Gabriel Talasso and Allan de Souza and Daniel Guidoni and Eduardo Cerqueira and Leandro Villas},
+ title = { Fine-Tuning Eficiente de Modelos de Linguagem Para Detectar Anomalias em Logs Privados usando Aprendizado Federado},
+ booktitle = {Anais do XLIII Simpósio Brasileiro de Redes de Computadores e Sistemas Distribuídos},
+ location = {Natal/RN},
+ year = {2025},
+ keywords = {},
+ issn = {2177-9384},
+ pages = {126--139},
+ publisher = {SBC},
+ address = {Porto Alegre, RS, Brasil},
+ doi = {10.5753/sbrc.2025.5859},
+ url = {https://sol.sbc.org.br/index.php/sbrc/article/view/35127}
+}
+```
